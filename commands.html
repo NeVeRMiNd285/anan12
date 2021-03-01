@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+    <title>Komutlar - Axwell</title>
+    <link href="../use.fontawesome.com/releases/v5.0.2/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="../cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css" rel="stylesheet"
+          integrity="sha256-HEtF7HLJZSC3Le1HcsWbz1hDYFPZCqDhZa9QsCgVUdw=" crossorigin="anonymous"/>
+    <link href="../cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <link href="css/home/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-165923623-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-165923623-1');
+    </script>
+    <script data-ad-client="ca-pub-5860405302460514" async src="../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+</head>
+
+<style>
+
+    .tabs.is-boxed a {
+        border-radius: 3px;
+        border: none;
+        color: #FFF;
+        margin-top: 35px;
+        margin-left: 5px;
+        -webkit-transition: all 0.1s ease-in-out;
+        transition: all 0.1s ease-in-out;
+    }
+
+    .tabs.is-boxed li.is-active a {
+        margin-top: 35px;
+        border: none;
+        border-radius: 0px;
+        border-radius: 3px;
+        background-color: #fcbf19;
+        color: #FFF;
+    }
+
+    .notification.advert {
+        position: fixed;
+        z-index: 9999;
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
+        background: #fcbf19;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        width: auto;
+        display: block;
+        top: 150px;
+        right: -450px;
+        width: 450px;
+        word-wrap: break-word;
+        color: #222;
+        font-size: 15px;
+        font-family: 'Roboto';
+    }
+
+    .notification.advert b {
+        color: #111;
+        text-transform: uppercase;
+        font-size: 15px;
+    }
+
+    .notification.advert a {
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .tabs.is-boxed li.is-active a:hover, .tabs.is-boxed li a:hover {
+        background-color: #dda60d;
+    }
+
+    .tabs ul {
+        border: none;
+    }
+
+    .title {
+        color: #fcbf19;
+    }
+
+    .subtitle {
+        color: #97A5AB;
+    }
+
+    .table {
+        background-color: rgba(200, 200, 200, 0.05);
+        border-radius: 5px;
+    }
+
+    .table * {
+        color: #FFF !important;
+        border-color: rgba(255, 255, 255, 0.1) !important;
+    }
+
+    img.sheepy {
+        max-width: 222px !important;
+        max-height: 222px !important;
+    }
+
+    @media  screen and (max-width: 1099px) {
+        img.sheepy {
+            display: none !important;
+        }
+    }
+
+</style>
+<body>
+<section class="hero is-info is-small is-bold" style="height: 400px;">
+    <div class="hero-head">
+        <nav class="navbar" data-aos="fade-down" data-aos-easing="ease-in-out-cubic" data-aos-duration
+        "200" data-aos-delay="400">
+        <div class="container">
+            <div class="navbar-brand" id="nohover">
+                <a class="navbar-item" href="index.html" id="nohover">
+                    <h1 class="sheepy brand gold" id="nohover">Axwell</h1>
+                </a>
+                <span class="navbar-burger burger" data-target="navbarMenu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+            </div>
+                            <div id="navbarMenu" class="navbar-menu">
+                    <div class="navbar-end">
+                        <a href="commands.html" class="navbar-item">
+                            Komutlar
+                        </a>
+                        <!--<a href="/votes" class="navbar-item">
+                            Top Votes
+                        </a>-->
+                                                    <a class="navbar-item yellow" href="https://discord.com/oauth2/authorize?client_id=811146541699956766&scope=bot&permissions=0" id="login">
+                                Giriş 
+                            </a>
+                                            </div>
+                </div>
+                    </div>
+        </nav>
+    </div>
+    <div class="hero-body">
+        <div class="columns is-centered">
+            <div class="column is-1"></div>
+            <div class="column is-3" style="float: right;">
+                <img src="img/logo.jpg"
+                     style="float: right;margin-top: 25px;max-height:222px;max-width:222px;" class="sheepy">
+            </div>
+            <div class="column" style="float: left; margin-top: 65px; margin-left: 15px;">
+                <h1 class="title" style="font-size: 45px; color: #fcbf19 !important;">
+                    Komutlar
+                </h1>
+                <h2 class="subtitle">
+                    |BOTİSMİ| kullanabileceğiniz birçok komut var ve daha fazlası sürekli ekleniyor!
+                </h2>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="tabs is-centered is-boxed" data-bulma="tabs">
+    <ul>
+        <li class="is-active"><a data-tab="#Guild">Sunucu</a>
+        <li><a data-tab="#roles">Roller</a>
+        <li><a data-tab="#fun">Eğlence</a>
+        <li><a data-tab="#economy">Ekonomi</a>
+        <li><a data-tab="#music">Müzik</a>
+        <li><a data-tab="#moderation">Moderasyon</a>
+        <li><a data-tab="#levels">Seviye</a>
+                    <li><a data-tab="#nsfw">NSFW</a>
+                            </li>
+    </ul>
+</div>
+
+<center>
+    <div class="container">
+
+        <section class="section" id="Guild">
+            <h1 class="title">Sunucu Komutları</h1>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>Komut</th>
+                    <th>Açıklama</th>
+                    <th>Kullanış</th>
+                    <th>İsim</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Dikkat!</td>
+                    <td>Daha Fazla Sunum Yapmak İçin Kopyala Yapıştır Yapabilirsiniz.</td>
+                    <td>>yardım</td>
+                    <td>none</td>
+                </tr>
+                <td>Dikkat!</td>
+                    <td>Daha Fazla Sunum Yapmak İçin Kopyala Yapıştır Yapabilirsiniz.</td>
+                    <td>>yardım</td>
+                    <td>none</td>
+                <tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="section" id="roles">
+            <h1 class="title">Rol Komutları</h1>
+            <h2 class="subtitle">Rol Komutları, kullanıcıların kendi kendine atanabilen roller almasına izin verir</h2>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>Komut</th>
+                    <th>Açıklama</th>
+                    <th>Kullanış</th>
+                    <th>İsim</th>
+                </tr>
+                </thead>
+                <tbody>
+                 <tr>
+                    <td>Dikkat!</td>
+                    <td>Daha Fazla Sunum Yapmak İçin Kopyala Yapıştır Yapabilirsiniz.</td>
+                    <td>>roller</td>
+                    <td>none</td>
+                </tr>
+                <td>Dikkat!</td>
+                    <td>Daha Fazla Sunum Yapmak İçin Kopyala Yapıştır Yapabilirsiniz.</td>
+                    <td>>roller</td>
+                    <td>none</td>
+                <tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="section" id="fun">
+            <h1 class="title">Eğlence Komutları</h1>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>Komut</th>
+                    <th>Açıklama</th>
+                    <th>Kullanış</th>
+                    <th>İsim</th>
+                </tr>
+                </thead>
+                <tbody>
+                 <tr>
+                    <td>Dikkat!</td>
+                    <td>Daha Fazla Sunum Yapmak İçin Kopyala Yapıştır Yapabilirsiniz.</td>
+                    <td>>eğlence</td>
+                    <td>none</td>
+                </tr>
+                <td>Dikkat!</td>
+                    <td>Daha Fazla Sunum Yapmak İçin Kopyala Yapıştır Yapabilirsiniz.</td>
+                    <td>>eğlence</td>
+                    <td>none</td>
+                <tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="section" id="music">
+            <h1 class="title">Müzik Komutları</h1>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>Komut</th>
+                    <th>Açıklama</th>
+                    <th>Kullanış</th>
+                    <th>İsim</th>
+                </tr>
+                </thead>
+                <tbody>
+                 <tr>
+                    <td>Dikkat!</td>
+                    <td>Daha Fazla Sunum Yapmak İçin Kopyala Yapıştır Yapabilirsiniz.</td>
+                    <td>>müzik</td>
+                    <td>none</td>
+                </tr>
+                <td>Dikkat!</td>
+                    <td>Daha Fazla Sunum Yapmak İçin Kopyala Yapıştır Yapabilirsiniz.</td>
+                    <td>>müzik</td>
+                    <td>none</td>
+                <tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="section" id="moderation">
+            <h1 class="title">Moderasyon Komutları</h1>
+            <h2 class="subtitle">Moderasyon komutları devam eden bir çalışmadır.<br>Daha fazlasının eklenmesini bekleyin
+                gelecek.</h2>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>Komut</th>
+                    <th>Açıklama</th>
+                    <th>Kullanış</th>
+                    <th>İsim</th>
+                </tr>
+                </thead>
+                <tbody>
+                 <tr>
+                    <td>Dikkat!</td>
+                    <td>Daha Fazla Sunum Yapmak İçin Kopyala Yapıştır Yapabilirsiniz.</td>
+                    <td>>moderasyon</td>
+                    <td>none</td>
+                </tr>
+                <td>Dikkat!</td>
+                    <td>Daha Fazla Sunum Yapmak İçin Kopyala Yapıştır Yapabilirsiniz.</td>
+                    <td>>moderasyon</td>
+                    <td>none</td>
+                <tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="section" id="economy">
+            <h1 class="title">Ekonomi Komutları</h1>
+            <h2 class="subtitle">İstediğin Açıklama.</h2>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>Komut</th>
+                    <th>Açıklama</th>
+                    <th>Kullanış</th>
+                    <th>İsim</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Dikkat!</td>
+                    <td>Daha Fazla Sunum Yapmak İçin Kopyala Yapıştır Yapabilirsiniz.</td>
+                    <td>>moderasyon</td>
+                    <td>none</td>
+                </tr>
+                <td>Dikkat!</td>
+                    <td>Daha Fazla Sunum Yapmak İçin Kopyala Yapıştır Yapabilirsiniz.</td>
+                    <td>>moderasyon</td>
+                    <td>none</td>
+                <tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="section" id="levels">
+            <h1 class="title">Seviye Komutları</h1>
+            <h2 class="subtitle">Kolay Menü Seçenekleri İle Hızlıca Kurulum Yapabilirsiniz.</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                    <td>Dikkat!</td>
+                    <td>Daha Fazla Sunum Yapmak İçin Kopyala Yapıştır Yapabilirsiniz.</td>
+                    <td>>moderasyon</td>
+                    <td>none</td>
+                </tr>
+                <td>Dikkat!</td>
+                    <td>Daha Fazla Sunum Yapmak İçin Kopyala Yapıştır Yapabilirsiniz.</td>
+                    <td>>moderasyon</td>
+                    <td>none</td>
+                <tr>
+                </tbody>
+            </table>
+        </section>
+                    <section class="section" id="nsfw">
+                <h1 class="title">NSFW Komutları</h1>
+                <h2 class="subtitle">NSFW Komutları Kullanarak Eğlenebilirsin.</h2>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>Komut</th>
+                        <th>Açıklama</th>
+                        <th>Kullanış</th>
+                        <th>İsim</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                         <tr>
+                    <td>Dikkat!</td>
+                    <td>Daha Fazla Sunum Yapmak İçin Kopyala Yapıştır Yapabilirsiniz.</td>
+                    <td>>moderasyon</td>
+                    <td>none</td>
+                </tr>
+                <td>Dikkat!</td>
+                    <td>Daha Fazla Sunum Yapmak İçin Kopyala Yapıştır Yapabilirsiniz.</td>
+                    <td>>moderasyon</td>
+                    <td>none</td>
+                <tr>
+                    </tbody>
+                </table>
+            </section>
+            </div>
+</center>
+
+<!--<div class="notification advert">
+    <button class="delete" onclick="closeBox();"></button>
+    <b>Want to win Steam Gift cards with Sheepy?</b><br>Head on over to our <a href="/votes">votes</a> page to find out more and get in on the action!
+</div>-->
+
+
+<script src="js/bulma.js"></script>
+<script src="../code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="../cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
+
+<script src="../cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+    /*$( document ).ready(function() {
+        setTimeout(function(){
+            $('.advert').animate({
+                right: '0px',
+            }, 500, 'swing');
+        }, 2000);
+    });
+    function closeBox(){
+        $('.advert').animate({
+            right: '-450px',
+        }, 500, 'swing');
+    }*/
+</script>
+</body>

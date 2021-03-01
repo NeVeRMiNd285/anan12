@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8"
+
+<head>
+    <title>Axwell - Müzik, moderasyon, ekonomi, seviyeler ve daha fazlası için dene!  </title>
+    <link href="../use.fontawesome.com/releases/v5.0.2/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="../cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css" rel="stylesheet" integrity="sha256-HEtF7HLJZSC3Le1HcsWbz1hDYFPZCqDhZa9QsCgVUdw=" crossorigin="anonymous" />
+    <link href="../cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <link href="css/home/style.css" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-165923623-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-165923623-1');
+    </script>
+    <script data-ad-client="ca-pub-5860405302460514" async src="../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+</head>
+
+<body>
+
+    <section class="hero is-info is-fullheight is-bold">
+        <div class="hero-head">
+            <nav class="navbar" data-aos="fade-down" data-aos-easing="ease-in-out-cubic" data-aos-duration=200" data-aos-delay="400">
+                <div class="container">
+                    <div class="navbar-brand" id="nohover">
+                        <a class="navbar-item" href="index.html" id="nohover">
+                            <h1 class="sheepy brand gold" id="nohover">Axwell</h1>
+                        </a>
+                                                    <a class="navbar-item yellow" href="https://discord.com/oauth2/authorize?client_id=811146541699956766&scope=bot&permissions=0" id="mobile-show-flex">
+                                
+                            </a>
+                                            </div>
+                    <div id="navbarMenu" class="navbar-menu">
+                        <div class="navbar-end">
+                            <a href="commands.html" class="navbar-item">
+                                Komutlar
+                            </a>
+                                                            <a class="navbar-item yellow" href="Web Panel Sana Kalmış İstersen Sil" id="login">
+                                    Giriş
+                                </a>
+                                                    </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="hero-body">
+            <div class="container has-text-centered"  data-aos="fade" data-aos-easing="ease-in-out-cubic" data-aos-duration="400">
+                <img src="img/logo.jpg" class="sheepy">
+                <h1 class="sheepy">Axwell</h1>
+                <h2 class="tagline">Müzik, moderasyon, ekonomi, seviyeler ve daha fazlası için dene!</h2>
+                <br><br><br>
+                <a href="https://discord.com/oauth2/authorize?client_id=811146541699956766&scope=bot&permissions=0" class="button is-primary discord"><i class="fab fa-discord"></i><span>&nbsp;Sunucuna Ekle</span></a>
+                <br><br>
+                <a href="https://discord.gg/9hn3pRjTFc" class="yellow">Destek Sunucumuza katılın</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="columns features">
+            <div class="column is-4" data-aos="fade-down" data-aos-duration="600">
+                <div class="card hover">
+                    <div class="card-image has-text-centered" id="economy">
+                        <i class="far fa-money-bill-alt far-gradient"></i>
+                    </div>
+                    <div class="card-content">
+                        <div class="content">
+                            <div class="card-title">Ekonomi</div>
+                            <div class="card-content">Kullanıcıların para kazanıp eğlenceli oyunlarla bağımlılık kazanmasına ve rol satın almasına olanak tanıyın!</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-4" data-aos="fade-down" data-aos-duration="600" data-aos-delay="400">
+                <div class="card hover">
+                    <div class="card-image has-text-centered" id="panel">
+                        <i class="fas fa-cogs far-gradient"></i>
+                    </div>
+                    <div class="card-content">
+                        <div class="content">
+                            <div class="card-title">Moderasyon</div>
+                            <div class="card-content">Sadece adminlerin kullanabileceği komutlarla sunucunuzu olağın üstü korumalarla güçlendirin!</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-4" data-aos="fade-down" data-aos-duration="600" data-aos-delay="600">
+                <div class="card hover">
+                    <div class="card-image has-text-centered" id="music">
+                        <i class="fas fa-headphones far-gradient"></i>
+                    </div>
+                    <div class="card-content">
+                        <div class="content">
+                            <div class="card-title">Müzik</div>
+                            <div class="card-content">Kendi çalma listenizi kurun, gece boyunca dans edin, akışı oynatmaya ve çok daha fazlasına izin verin!</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <nav class="level" id="colored">
+        <div class="level-item has-text-centered">
+            <div>
+                <p class="heading">Sunucular</p>
+                <p class="title" id="guilds"></p>
+            </div>
+        </div>
+        <div class="level-item has-text-centered">
+            <div>
+                <p class="heading">Kullanıcılar</p>
+                <p class="title" id="shards"></p>
+            </div>
+        </div>
+        <div class="level-item has-text-centered">
+            <div>
+                <p class="heading">Discord Bot List Oy</p>
+                <p class="title" id="votes"></p>
+            </div>
+        </div>
+    </nav>
+
+    <section class="container" data-aos="flip-left" data-aos-easing="ease-in-out-cubic" data-aos-duration="600">
+        <h1 class="page-heading">Komutlar</h1>
+        <p class="page-content">
+            |BOTİSİM|, sunucunuzu hayata geçirmenize yardımcı olacak birçok komuta ve özelliğe sahiptir ve topluluk girdilerinden her zaman daha fazlası eklenir.
+        </p>
+        <center><a href="commands.html" class="button is-primary cmds">Bütün Komutlar</a></center>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <style>
+        .sheepy-1{
+            border-radius: 100%;
+            box-shadow: 2px 2px #111;
+            width: 200px;
+            height: 200px;
+            border: 4px solid #ffcc00;
+        }
+        #footer .column{
+            margin-top: 75px;
+            margin-bottom: 75px;
+        }
+        #dbl{
+            border: 2px solid #ffcc00;
+            border-radius: 10px;
+        }
+        #donate {
+            max-width: 200px;
+        }
+        input[name="donate-paypal"]::-webkit-outer-spin-button,
+        input[name="donate-paypal"]::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        /* Firefox */
+        input[type=number] {
+            -moz-appearance: textfield;
+        }
+
+        #input-amount {
+            max-height: 90px;
+        }
+
+        #symbol {
+            position: relative;
+            float: left;
+            color: #fff;
+            z-index: 1000;
+            top: 34px;
+            font-size: 22px;
+            left: 6px;
+        }
+
+        #donate-paypal {
+            display: block;
+            background: #23272A;
+            color: #fff;
+            max-width: 200px;
+            height: 35px;
+            border: 0;
+            font-size: 22px;
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+        .trade {
+            color: #fff;
+            font-size: 15px;
+        }
+    </style>
+    <section class="container" id="footer">
+        <div class="columns is-centered">
+            <div class="column">
+                <!--<br>
+                <center>
+                    <h1 style="color: #fcbf19; letter-spacing: 4px;">Powered By</h1><br>
+                    <a href="https://failsoft.io/?spon=sheepy"><img src="https://media.discordapp.net/attachments/263801207410130944/452922919845363723/LogoTestTextGrayple.png"></a>
+                </center>-->
+                <br>
+                <center><a href="https://discordapp.com/"><img src="img/discord-logo.png"></a></center>
+            </div>
+            <div class="column">
+                <center><img src="img/logo.jpg" class="sheepy-1"></center>
+            </div>
+            <div class="column">
+                <br>
+                <center>
+                    <a href="https://top.gg">
+                        <img id="dbl"src="https://media.discordapp.net/attachments/811313060496015370/815501196269453322/Axwell.PNG" />
+                    </a>
+                </center>
+            </div>
+            <div class="column">
+                <br>
+                <center>
+                    <a href="https://discord.gg/nVBWXPqRkp" >
+                        <img src="https://media.discordapp.net/attachments/811313060496015370/815501574285164584/plasmic.PNG" title="Discord için Botlar'da listelenen Axwell'i ziyaret edin!" alt="Axwell Widget Yüklenemedi" />
+                    </a>
+                </center>
+            </div>
+        </div>
+        <div class="columns is-centered">
+            <div class="column">
+                <center class="trade">Web Site Tasarım: Axwell <br> İzinsiz Paylaşmak Yasaktır! <br> Bu Siteyi Parayla Satmak Yasaktır!</center>
+            </div>
+        </div>
+    </section>
+
+    <script src="../code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="../cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
+    <script src="js/home/countUp.js"></script>
+    <script src="../cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        var loaded = false;
+        $('.level').waypoint(function(direction){
+            if(!loaded){
+                var gOptions = {
+                    useEasing: true,
+                    useGrouping: true,
+                    separator: ','
+                };
+                var guilds = new CountUp("guilds", 0, 0, 0, 2.5, gOptions);
+                if (!guilds.error) {
+                    guilds.start();
+                    loaded = true;
+                } else {
+                    console.error(guilds.error);
+                    loaded = false;
+                }
+                var members = new CountUp("shards", 0, 0, 0, 2.5, gOptions);
+                if (!members.error) {
+                    members.start();
+                    loaded = true;
+                } else {
+                    console.error(members.error);
+                    loaded = false;
+                }
+                var shardsOptions = {
+                    useEasing: true,
+                    useGrouping: false,
+                    separator: ','
+                };
+                var shards = new CountUp('votes', 0, 0, 0, 2.5, shardsOptions);
+                if (!shards.error) {
+                    shards.start();
+                } else {
+                    console.error(shards.error);
+                }
+            }
+        },{
+            offset: 'bottom-in-view'
+        });
+    </script>
+</body>
+
+</html>
